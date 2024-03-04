@@ -4,7 +4,8 @@ import mongoose from "mongoose";
 const OrderABlessingSchema = mongoose.Schema({
     Id:{
         type: Number,
-        default: 0
+        default: 0,
+        
     },
     phone:{
         type:Number,

@@ -20,4 +20,4 @@ const SubcategoriesSchema = mongoose.Schema({
     }
 })
 
-export default mongoose.model("subcategories", SubcategoriesSchema);
+export default SubcategoriesSchema//mongoose.model("subcategories", SubcategoriesSchema);

@@ -22,11 +22,11 @@ const UserSchema = mongoose.Schema({
     },
     role: {
         type: String,
-        required: true,
+        // required: true,
     },
     lastDate: {
         type: String,
-        required: true,
+        // required: true,
     },
 });
 export default mongoose.model("users", UserSchema);

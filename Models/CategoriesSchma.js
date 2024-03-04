@@ -1,5 +1,6 @@
 // סכמה של קטגוריות
 import mongoose from "mongoose";
+import SubcategoriesSchema from './SubcategoriesSchema.js'
 
 const CategoriesSchema = mongoose.Schema({
     Id: {
@@ -14,6 +15,7 @@ const CategoriesSchema = mongoose.Schema({
         type: String,
         required: true,
     }
+     ,Subcategories:[SubcategoriesSchema]
 })
 
 export default mongoose.model("categories", CategoriesSchema);

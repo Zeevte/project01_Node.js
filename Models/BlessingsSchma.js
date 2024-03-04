@@ -3,7 +3,7 @@ const BlessingSchema = mongoose.Schema({
     name: {
         type: String,
         required: true,
-        default: "User Name"
+        // default: "User Name"
     },
     urlBackground: {
         type: String,
@@ -15,17 +15,18 @@ const BlessingSchema = mongoose.Schema({
     },
     categoriId: {
         type: Number,
-        default: 0
+        // default: 0,
+        require: true
     },
     subCategoriId: {
         type: Number,
         default: 0
     },
-    Id:{
+    Id: {
         type: Number,
         default: 0
     },
-  
+
 })
 
 export default mongoose.model("blessingSchema", BlessingSchema);

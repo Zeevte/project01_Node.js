@@ -1,7 +1,8 @@
 // סכמה של רקע
 import mongoose from "mongoose";
 
-const BackgroundsSchema = mongoose.Schema({
+export const BackgroundsSchema = mongoose.Schema({
+    
     Id: {
         type: Number,
         default: 0
@@ -9,7 +10,7 @@ const BackgroundsSchema = mongoose.Schema({
     name: {
         type: String,
         required: true,
-        default: "User Name"
+        
     },
     categoriId: {
         type: Number,
@@ -21,4 +22,4 @@ const BackgroundsSchema = mongoose.Schema({
     }
 })
 
-export default mongoose.model("backgroundsSchema", BackgroundsSchema);
+export default mongoose.model("backgrounds", BackgroundsSchema);

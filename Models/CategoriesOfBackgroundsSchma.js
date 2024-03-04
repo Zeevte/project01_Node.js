@@ -1,5 +1,8 @@
 // סכמה של קטגוריות של רקעים
 import mongoose from "mongoose";
+import { BackgroundsSchema } from './BackgroundsSchma.js'
+
+
 
 const CategoriesOfBackgroundsSchema = mongoose.Schema({
     Id: {
@@ -11,10 +14,9 @@ const CategoriesOfBackgroundsSchema = mongoose.Schema({
         required: true,
         default: "User Name"
     },
-    BackgroundId: {
-        type: Number,
-        default: 0
-    }
+    Backgrounds: [BackgroundsSchema]
+
+
 })
 
 export default mongoose.model("categoriesOfBackgrounds", CategoriesOfBackgroundsSchema);
