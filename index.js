@@ -12,6 +12,7 @@ connectDb();
 
 const app = express()
 
+//aaaaaaaa
 app.use(cors());
 app.use(express.json());
 app.use('/user', user)
