@@ -7,7 +7,9 @@ import CategoriesOfBackgrounds from './routes/categoriesOfBackgrounds.js'
 
 import cors from 'cors';
 
+//its connected to the mongo db
 connectDb();
+
 const app = express()
 
 app.use(cors());
