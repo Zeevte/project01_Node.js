@@ -7,12 +7,10 @@ import CategoriesOfBackgrounds from './routes/categoriesOfBackgrounds.js'
 
 import cors from 'cors';
 
-//its connected to the mongo db
 connectDb();
 
 const app = express()
 
-//aaaaaaaa
 app.use(cors());
 app.use(express.json());
 app.use('/user', user)
@@ -20,7 +18,6 @@ app.use('/category', category)
 app.use('/background', background)
 app.use('/categoriesOfBackgrounds', CategoriesOfBackgrounds)
 
-//bbbbb
 const port = 3010
 
 
