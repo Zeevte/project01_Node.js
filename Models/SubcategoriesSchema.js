@@ -14,10 +14,10 @@ const SubcategoriesSchema = mongoose.Schema({
         type: String,
         required: true,
     },
-    image:{
-        type: String,
-        required: true,
-    }
+    // image:{
+    //     type: String,
+    //     required: true,
+    // }
 })
 
 export default SubcategoriesSchema//mongoose.model("subcategories", SubcategoriesSchema);

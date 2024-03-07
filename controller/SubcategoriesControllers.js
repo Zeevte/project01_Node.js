@@ -13,10 +13,10 @@ const SubCategoriesControllers = {
     },
 
     add: async (req, res) => {
-        const { name,categoriId, image} = req.body;
-        console.log(name, categoriId,image)
+        const { name,categoriId} = req.body;
+        console.log(name, categoriId)
         try {
-            const data = await SubcategoriesSchema.create({ name,categoriId,image});
+            const data = await SubcategoriesSchema.create({ name,categoriId});
             res.json(data);
         }
         catch (error) {
