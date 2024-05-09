@@ -18,4 +18,5 @@ const CategoriesSchema = mongoose.Schema({
      ,Subcategories:[SubcategoriesSchema]
 })
 
+
 export default mongoose.model("categories", CategoriesSchema);

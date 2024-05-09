@@ -6,10 +6,6 @@ const SubcategoriesSchema = mongoose.Schema({
         type: Number,
         default: 0
     },
-    Id: {
-        type: Number,
-        default: 0
-    },
     name: {
         type: String,
         required: true,
